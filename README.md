@@ -1,2 +1,2 @@
 # Bat-mon-v1
-Edge Device for Battery Environmental Monitoring
+Edge Device for Battery Environment Monitoring
