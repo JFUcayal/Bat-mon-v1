@@ -10,7 +10,7 @@
 
 Lithium batteries, whether in stationary storage systems or during transport, require careful environmental monitoring to ensure safety, longevity, and performance. Bat-Mon addresses this need by providing two types of monitoring devices:
 
-- **Fixed Unit**: Designed for static storage systems. Measures temperature and humidity.
+- **Stationary Unit**: Designed for static storage systems. Measures temperature and humidity.
 - **Portable Unit**: Designed for battery transport scenarios. Measures temperature, humidity, and vibration (via accelerometer).
 
 Both units support low-power operation and are intended to be integrated into broader telemetry or battery management systems.
