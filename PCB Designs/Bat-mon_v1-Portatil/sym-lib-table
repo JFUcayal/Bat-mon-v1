@@ -1,0 +1,11 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Wurth_LED_150060SS75000")(type "KiCad")(uri "C:/Users/dst2001055/Desktop/Footprints/Mouser_kicad_sym/150060SS75000.kicad_sym")(options "")(descr ""))
+  (lib (name "cm8v-t1a-32_768khz")(type "KiCad")(uri "C:/Users/dst2001055/Desktop/Footprints/Mouser_kicad_sym/CM8V-T1A-32_768kHz-4pF-20PPM-T.kicad_sym")(options "")(descr ""))
+  (lib (name "EEPROM_M24M02E")(type "KiCad")(uri "C:/Users/dst2001055/Desktop/Footprints/Mouser_kicad_sym/M24M02E-FMC6TG.kicad_sym")(options "")(descr ""))
+  (lib (name "BUZZER_PS1720")(type "KiCad")(uri "C:/Users/dst2001055/Desktop/Footprints/Mouser_kicad_sym/PS1720P02.kicad_sym")(options "")(descr ""))
+  (lib (name "SLIDE_SWITCH_232775")(type "KiCad")(uri "C:/Users/dst2001055/Desktop/Footprints/Mouser_kicad_sym/SLW-232775-8A-N-D.kicad_sym")(options "")(descr ""))
+  (lib (name "DC-DC-TPS63802")(type "KiCad")(uri "C:/Users/dst2001055/Desktop/Footprints/Mouser_kicad_sym/TPS63802DLAR.kicad_sym")(options "")(descr ""))
+  (lib (name "Header-F-1x10")(type "KiCad")(uri "C:/Users/dst2001055/Desktop/Footprints/Mouser_kicad_sym/61301011821.kicad_sym")(options "")(descr ""))
+  (lib (name "Header-M-1x4")(type "KiCad")(uri "C:/Users/dst2001055/Desktop/Footprints/Mouser_kicad_sym/61300411121.kicad_sym")(options "")(descr ""))
+)
