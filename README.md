@@ -16,19 +16,19 @@ Lithium batteries, whether in stationary storage systems or during transport, re
 Both units support low-power operation and are intended to be integrated into broader telemetry or battery management systems.
 
 ## 🧩 3D Views of the PCBs
-
-<div style="display: flex; gap: 20px; justify-content: center; align-items: center; gap: 60px; flex-wrap: wrap;">
-  <div style="text-align: center;">
-    <strong>📦 Stationary Monitoring Prototype</strong><br/>
-    <img src="docs/PINOUT-FIXO-SHIELD.png" alt="Stationary Prototype 3D View" width="90%"/>
-  </div>
-
-  <div style="text-align: center;">
-    <strong>🚚 Portable Monitoring Prototype</strong><br/>
-    <img src="docs/PINOUT-PORTATIL.png" alt="Portable Prototype 3D View" width="90%"/>
-  </div>
+<div id="image-table" align="center">
+    <table>
+        <tr>
+            <td style="padding:10px"> <strong>📦 Stationary Monitoring Prototype</strong><br/><br/>
+                <img src="docs/PINOUT-FIXO-SHIELD.png" alt="Stationary Prototype 3D View" width="550px"/>
+            </td>
+            <td style="padding:10px"> <br/><strong>🚚 Portable Monitoring Prototype</strong><br/><br/>
+                 <img src="docs/PINOUT-PORTATIL.png" alt="Portable Prototype 3D View" width="450px"/>
+            </td>
+        </tr>
+    </table>
 </div>
-
+    
 ## 🚀 Key Features
 
 - 🌡️ **Temperature and Humidity Sensing**
