@@ -36,3 +36,4 @@ Both units support low-power operation and are intended to be integrated into br
 - 📶 **BLE Communication Support**
 - 🔋 **Low Power Design**
 - 📐 **Designed in KiCAD**
+- 🧠 **Powered by STM32**
