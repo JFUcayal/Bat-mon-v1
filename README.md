@@ -18,17 +18,15 @@ Both units support low-power operation and are intended to be integrated into br
 ## 🧩 3D Views of the PCBs
 
 <div style="display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap;">
-
-  <div style="flex: 1; min-width: 250px; text-align: center;">
+  <div style="flex: 1; min-width: 200px; text-align: center;">
     <strong>📦 Stationary Monitoring Prototype</strong><br/>
-    <img src="docs/PINOUT-FIXO-SHIELD.png" alt="Stationary Prototype 3D View" width="100%"/>
+    <img src="docs/PINOUT-FIXO-SHIELD.png" alt="Stationary Prototype 3D View" width="80%"/>
   </div>
 
-  <div style="flex: 1; min-width: 250px; text-align: center;">
+  <div style="flex: 1; min-width: 200px; text-align: center;">
     <strong>🚚 Portable Monitoring Prototype</strong><br/>
-    <img src="docs/PINOUT-PORTATIL.png" alt="Portable Prototype 3D View" width="100%"/>
+    <img src="docs/PINOUT-PORTATIL.png" alt="Portable Prototype 3D View" width="80%"/>
   </div>
-
 </div>
 
 ## 🚀 Key Features
