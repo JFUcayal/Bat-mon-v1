@@ -15,6 +15,11 @@ Lithium batteries, whether in stationary storage systems or during transport, re
 
 Both units support low-power operation and are intended to be integrated into broader telemetry or battery management systems.
 
+<p align="center">
+  <img src="docs/PINOUT-PORTATIL.png" alt="Portable Prototype - img1" width="250">
+  <img src="docs/PINOUT-FIXO-SHIELD.png" alt="Stationary Prototype - img2" width="250">
+</p>
+
 ## 🚀 Key Features
 
 - 🌡️ **Temperature and Humidity Sensing**
