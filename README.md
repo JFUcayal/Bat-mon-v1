@@ -17,7 +17,7 @@ Both units support low-power operation and are intended to be integrated into br
 
 ## 🧩 3D Views of the PCBs
 
-<div style="display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap;">
+<div style="display: flex; gap: 20px; justify-content: center; align-items: center; gap: 60px; flex-wrap: wrap;">
   <div style="text-align: center;">
     <strong>📦 Stationary Monitoring Prototype</strong><br/>
     <img src="docs/PINOUT-FIXO-SHIELD.png" alt="Stationary Prototype 3D View" width="90%"/>
