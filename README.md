@@ -1,9 +1,9 @@
 # Bat-mon-v1
 Edge Device for Battery Environment Monitoring System (Lithium Storage and Transport)
 
-**Bat-Mon** is a hardware/firmware project developed as part of my Master's thesis, focused on the real-time monitoring of lithium battery systems. 
-It includes custom-designed PCBs for fixed and portable use cases, enabling the detection of environmental conditions such as **temperature**, **humidity**, and **vibration**. All hardware was developed using **KiCAD**.
-This project was developed in the context of a national R&D consortium for advanced energy storage systems:  
+- **Bat-Mon** is a hardware/firmware project developed as part of my Master's thesis, focused on the real-time monitoring of lithium battery systems. 
+- It includes custom-designed PCBs for fixed and portable use cases, enabling the detection of environmental conditions such as **temperature**, **humidity**, and **vibration**. All hardware was developed using **KiCAD**.
+- This project was developed in the context of a national R&D consortium for advanced energy storage systems:  
 [New Generation Storage – https://newgenstorage.pt](https://newgenstorage.pt). It is partially funded by the **PRR – Recovery and Resilience Plan** and aims to support innovation in battery safety and smart monitoring systems.
 
 ## 🔧 Project Overview
