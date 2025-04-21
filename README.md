@@ -15,7 +15,7 @@ Lithium batteries, whether in stationary storage systems or during transport, re
 
 Both units support low-power operation and are intended to be integrated into broader telemetry or battery management systems.
 
-## 🧩 3D Views of the PCBs
+## 📟 3D Views of the PCBs
 <div id="image-table" align="center">
     <table>
         <tr>
