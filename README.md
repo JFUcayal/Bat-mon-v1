@@ -20,6 +20,11 @@ Both units support low-power operation and are intended to be integrated into br
   <img src="docs/PINOUT-PORTATIL.png" alt="Portable Prototype - img2" width="300">
 </p>
 
+<p align="center">
+  <b>Left:</b> Fixed Unit 3D View &nbsp;|&nbsp; <b>Right:</b> Portable Unit 3D View
+</p>
+
+
 ## 🚀 Key Features
 
 - 🌡️ **Temperature and Humidity Sensing**
