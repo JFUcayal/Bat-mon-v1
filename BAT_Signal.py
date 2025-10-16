@@ -21,7 +21,7 @@ class BatSignalMonitor:
         self.serial_running = True
         self.start_time = None
         self.monitoring_started = False
-        self.current_cycle_data = {}  
+        self.current_cycle_data = {}  # Armazena todos os dados do ciclo atual
         self.awaiting_cycle_completion = False
         
         # Arrays para dados (apenas inteiros)
@@ -116,17 +116,17 @@ class BatSignalMonitor:
             # Acelerações
             accel_x_match = re.search(r'X Acceleration ->\s*(-?\d+)\s*mg', line)
             if accel_x_match:
-                self.current_cycle_data['accel_x'] = int(accel_x_match.group(1))
+                self.current_cycle_data['accel_x'] = int(accel_x_match.group(1)) 
                 return None
             
             accel_y_match = re.search(r'Y Acceleration ->\s*(-?\d+)\s*mg', line)
             if accel_y_match:
-                self.current_cycle_data['accel_y'] = int(accel_y_match.group(1))
+                self.current_cycle_data['accel_y'] = int(accel_y_match.group(1)) 
                 return None
             
             accel_z_match = re.search(r'Z Acceleration ->\s*(-?\d+)\s*mg', line)
             if accel_z_match:
-                self.current_cycle_data['accel_z'] = int(accel_z_match.group(1))
+                self.current_cycle_data['accel_z'] = int(accel_z_match.group(1)) 
                 return None
             
             # Se chegou ao COMMS, o ciclo está completo
@@ -174,8 +174,10 @@ class BatSignalMonitor:
                 time.sleep(1)
     
     def setup_plots(self):
+        """Configura os 3 gráficos com design moderno e dark"""
         self.fig = plt.figure(figsize=(16, 10), facecolor=self.colors['background'])
         
+        # Título principal com design moderno
         self.fig.suptitle(
             'BAT-SIGNAL • REAL-TIME MONITORING PLATFORM\n',
             fontsize=18,
@@ -185,9 +187,10 @@ class BatSignalMonitor:
             fontfamily='monospace'
         )
         
+        # Ajusta o layout para dar mais espaço ao título
         plt.subplots_adjust(top=0.88, bottom=0.08, hspace=0.4, wspace=0.3)
         
-        # Gráfico 1: Temperatura
+        # Gráfico 1: Temperatura - Design moderno
         self.ax1 = plt.subplot(2, 2, 1, facecolor=self.colors['card'])
         self.ax1.set_title('TEMPERATURE', fontweight='bold', 
                           color=self.colors['temp'], fontsize=14, pad=20)
@@ -209,7 +212,7 @@ class BatSignalMonitor:
                                               facecolor=self.colors['background'], 
                                               alpha=0.8))
         
-        # Gráfico 2: Humidade
+        # Gráfico 2: Humidade - Design moderno
         self.ax2 = plt.subplot(2, 2, 2, facecolor=self.colors['card'])
         self.ax2.set_title('HUMIDITY', fontweight='bold', 
                           color=self.colors['humidity'], fontsize=14, pad=20)
@@ -231,15 +234,15 @@ class BatSignalMonitor:
                                              facecolor=self.colors['background'], 
                                              alpha=0.8))
         
-        # Gráfico 3: Aceleração XYZ
+        # Gráfico 3: Aceleração XYZ - Design moderno
         self.ax3 = plt.subplot(2, 1, 2, facecolor=self.colors['card'])
         self.ax3.set_title('ACCELERATION • XYZ AXES', fontweight='bold', 
                           color=self.colors['accent'], fontsize=14, pad=20)
-        self.ax3.set_ylabel('Acceleration (mg)', color=self.colors['text_primary'], fontsize=11)
+        self.ax3.set_ylabel('Acceleration (10⁻³ g)', color=self.colors['text_primary'], fontsize=11)
         self.ax3.set_xlabel('Time (seconds)', color=self.colors['text_secondary'], fontsize=10)
         self.ax3.grid(True, color=self.colors['grid'], alpha=0.3, linestyle='--')
         
-        # Linhas com cores
+        # Linhas com cores modernas
         self.line_x, = self.ax3.plot([], [], color=self.colors['accel_x'], 
                                     linewidth=2.5, label='X-Axis', alpha=0.9)
         self.line_y, = self.ax3.plot([], [], color=self.colors['accel_y'], 
@@ -247,16 +250,18 @@ class BatSignalMonitor:
         self.line_z, = self.ax3.plot([], [], color=self.colors['accel_z'], 
                                     linewidth=2.5, label='Z-Axis', alpha=0.9)
         
-        # Legenda
+        # Legenda moderna
         self.ax3.legend(loc='upper right', facecolor=self.colors['background'],
                        edgecolor=self.colors['grid'], fontsize=10)
         
         self.ax3.tick_params(colors=self.colors['text_secondary'])
         self.ax3.yaxis.set_major_locator(plt.MaxNLocator(integer=True))
         
+        # Linha zero com estilo moderno
         self.ax3.axhline(y=0, color=self.colors['text_secondary'], 
                         linestyle='-', alpha=0.5, linewidth=1)
         
+        # Valores atuais das acelerações
         self.accel_text = self.ax3.text(0.015, 0.925, 'X: --  Y: --  Z: --', 
                                        transform=self.ax3.transAxes, 
                                        color=self.colors['text_primary'],
@@ -385,5 +390,4 @@ class BatSignalMonitor:
 # Executar a aplicação
 if __name__ == "__main__":
     monitor = BatSignalMonitor(port='COM3', baudrate=115200)
-
     monitor.start()
